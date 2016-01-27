@@ -1,14 +1,23 @@
+int a;
+int limit;
+int limit1;
 public void setup()
 {
   size(400,400);
 }
 public void draw()
 {
-sierpinski(0,400,400);
+background(255);
+sierpinski(limit-a*5,limit1+a*5,a*10);
+System.out.println(a);
 }
 public void mouseDragged()//optional
 {
-
+limit = mouseX;
+limit1 = mouseY;
+}
+public void mouseWheel(MouseEvent event){
+  a = a+event.getCount();
 }
 public void sierpinski(int x, int y, int len) 
 {
