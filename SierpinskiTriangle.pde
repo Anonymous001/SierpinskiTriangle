@@ -9,7 +9,6 @@ public void draw()
 {
 background(255);
 sierpinski(limit-a*5,limit1+a*5,a*10);
-System.out.println(a);
 }
 public void mouseDragged()//optional
 {
